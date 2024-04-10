@@ -272,7 +272,6 @@ img#impresoraButton {
         var sub_total = params.has('sub_total') ? params.get('sub_total') : " ";
         var payment = params.has('payment') ? params.get('payment') : " ";
         var balance = params.has('balance') ? params.get('balance') : " ";
-        var logo = params.has('logo') ? params.get('logo') : " ";
         var clinic = params.has('clinic') ? params.get('clinic') : " ";
         var address = params.has('address') ? params.get('address') : " ";
         var contact = params.has('contact') ? params.get('contact') : " ";
@@ -318,7 +317,7 @@ img#impresoraButton {
 
         <div class="label">
             <p class="info-tienda">
-              <img id="logo" >
+           
                 <p id="clinic">
                 <br>
                <p id="address">
@@ -478,7 +477,6 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
         var totalElement = document.getElementById("total").textContent = total;
         var paymentElement = document.getElementById("payment").textContent = payment;
         var balanceElement = document.getElementById("balance").textContent = balance;
-        var logo = document.getElementById("logo").textContent = logo;
         var clinic = document.getElementById("clinic").textContent = clinic;
         var address = document.getElementById("address").textContent = address;
         var contact = document.getElementById("contact").textContent = contact;
