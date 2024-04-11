@@ -266,6 +266,8 @@ img#impresoraButton {
         // Obtener los valores de los parámetros
         var invoice = params.has('invoice') ? params.get('invoice') : "---";
         var date = params.has('date') ? params.get('date') : "dd/mm/aaaa";
+
+        var doctor = params.has('doctor) ? params.get('doctor') : " ";
         var customer = params.has('customer') ? params.get('customer') : " ";
         var phone = params.has('phone') ? params.get('phone') : " ";
         var total = params.has('total') ? params.get('total') : "";
@@ -472,7 +474,9 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
     <script>
         var invoiceElement = document.getElementById("invoice_id").textContent = invoice;
         var dateElement = document.getElementById("date").textContent = date;
-        var customer = document.getElementById("customer").textContent = customer;
+        var doctor = document.getElementById("doctor").textContent = doctor;
+
+var customer = document.getElementById("customer").textContent = customer;
         var phone = document.getElementById("phone").textContent = phone;
         var totalElement = document.getElementById("total").textContent = total;
         var paymentElement = document.getElementById("payment").textContent = payment;
