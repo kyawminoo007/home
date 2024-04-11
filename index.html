@@ -276,7 +276,7 @@ img#impresoraButton {
         var clinic = params.has('clinic') ? params.get('clinic') : " ";
         var address = params.has('address') ? params.get('address') : " ";
         var contact = params.has('contact') ? params.get('contact') : " ";
-        var text = params.has('text') ? params.get('text') : "dd/mm/aaaa am/pm";
+        var text = params.has('text') ? params.get('text') : " ";
         
         //Recibe los datos de los servicios (separados por comas)
         var qty = params.has('qty') ? params.get('qty') : "";
@@ -467,7 +467,7 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
     </div>
 <table class="table">
  <tr>
-    <td style="text-align: left;" id="text"></td>
+    <td style="text-align: left;" id="date"></td>
     <td></td>
     <td></td>
     <td class="nro_boleta" id="invoice_id"></td>
