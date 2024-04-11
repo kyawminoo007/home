@@ -269,7 +269,6 @@ img#impresoraButton {
 
         var doctor = params.has('doctor') ? params.get('doctor') : " ";
         var customer = params.has('customer') ? params.get('customer') : " ";
-        var phone = params.has('phone') ? params.get('phone') : " ";
         var total = params.has('total') ? params.get('total') : "";
         var sub_total = params.has('sub_total') ? params.get('sub_total') : " ";
         var payment = params.has('payment') ? params.get('payment') : " ";
@@ -337,7 +336,7 @@ img#impresoraButton {
 </tr>
  <tr>
     <td style="text-align: left;">Doctor</td>
-    <td class="nro_boleta" id="doctor"></td>
+    <td class="customer" id="doctor"></td>
     <td></td>
     <td></td>
 </tr>
@@ -477,7 +476,7 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
         var doctor = document.getElementById("doctor").textContent = doctor;
 
 var customer = document.getElementById("customer").textContent = customer;
-        var phone = document.getElementById("phone").textContent = phone;
+        
         var totalElement = document.getElementById("total").textContent = total;
         var paymentElement = document.getElementById("payment").textContent = payment;
         var balanceElement = document.getElementById("balance").textContent = balance;
