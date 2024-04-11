@@ -470,6 +470,14 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
             <br>
               
     </div>
+<table class="table">
+ <tr>
+    <td style="text-align: left;" id="date"></td>
+    <td></td>
+    <td></td>
+    <td class="nro_boleta" id="invoice_id"></td>
+</tr>
+</table>
     <script>
         var invoiceElement = document.getElementById("invoice_id").textContent = invoice;
         var dateElement = document.getElementById("date").textContent = date;
