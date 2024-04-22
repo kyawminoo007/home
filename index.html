@@ -295,17 +295,7 @@ img#impresoraButton {
         var clinic = params.has('clinic') ? params.get('clinic') : " ";
         var address = params.has('address') ? params.get('address') : " ";
         var contact = params.has('contact') ? params.get('contact') : " ";
-
-var now = new Date();
-var day = ("0" + now.getDate()).slice(-2);
-var month = ("0" + (now.getMonth() + 1)).slice(-2);
-var year = now.getFullYear();
-var hours = ("0" + now.getHours()).slice(-2);
-var minutes = ("0" + now.getMinutes()).slice(-2);
-var ampm = now.getHours() >= 12 ? 'PM' : 'AM';
-var formattedDateTime = day + "/" + month + "/" + year + " " + hours + ":" + minutes + " " + ampm;
-
-var text = params.has('text') ? params.get('text') : formattedDateTime;
+        var text = params.has('text') ? params.get('text') : " ";
         
         
         //Recibe los datos de los servicios (separados por comas)
@@ -503,7 +493,7 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
     </div>
 <table class="table">
  <tr>
-    <td style="text-align: left;" id="text"></td>
+    <td style="text-align: left;" id="date"></td>
     <td></td>
     <td></td>
     <td class="nro_boleta" id="invoice_id"></td>
