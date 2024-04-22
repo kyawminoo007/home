@@ -295,7 +295,8 @@ img#impresoraButton {
         var clinic = params.has('clinic') ? params.get('clinic') : " ";
         var address = params.has('address') ? params.get('address') : " ";
         var contact = params.has('contact') ? params.get('contact') : " ";
-        var text = params.has('text') ? params.get('text') : " ";
+
+const text = urlParams.get('text');
         
         
         //Recibe los datos de los servicios (separados por comas)
@@ -493,7 +494,7 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
     </div>
 <table class="table">
  <tr>
-    <td style="text-align: left;" id="date"></td>
+    <td style="text-align: left;" id="text"></td>
     <td></td>
     <td></td>
     <td class="nro_boleta" id="invoice_id"></td>
@@ -514,7 +515,8 @@ var cashier = document.getElementById("cashier").textContent = cashier;
         var clinic = document.getElementById("clinic").textContent = clinic;
         var address = document.getElementById("address").textContent = address;
         var contact = document.getElementById("contact").textContent = contact;
-        var text = document.getElementById("text").textContent = text;
+
+ const text = document.getElementById("text").textContent = text;
         var sub_total = document.getElementById("sub_total").textContent = sub_total;
 
 
